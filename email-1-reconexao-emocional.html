@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Faz tempo que a gente não se vê</title>
   <!--[if mso]>
   <noscript>
@@ -14,334 +14,43 @@
     </xml>
   </noscript>
   <![endif]-->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background-color: #F5F0EB;
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 14px;
-      color: #1E3C2E;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .email-wrapper {
-      background-color: #F5F0EB;
-      padding: 32px 0;
-    }
-
-    .email-container {
-      width: 100%;
-      max-width: 700px;
-      margin: 0 auto;
-      background-color: #FFFFFF;
-    }
-
-    /* ── HEADER ── */
-    .header {
-      background-color: #1E3C2E;
-      padding: 28px 40px;
-      text-align: center;
-    }
-
-    .header-logo-text {
-      display: inline-block;
-      text-align: center;
-    }
-
-    .header-logo-title {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 32px;
-      font-weight: 400;
-      color: #C4882A;
-      letter-spacing: 3px;
-      text-transform: lowercase;
-      line-height: 1;
-    }
-
-    .header-logo-subtitle {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 600;
-      color: #FFFFFF;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-top: 6px;
-    }
-
-    /* ── HERO IMAGE ── */
-    .hero-image-block {
-      width: 100%;
-      height: 320px;
-      background-color: #D9CFC4;
-      display: block;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-image-block img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .hero-placeholder {
-      width: 100%;
-      height: 320px;
-      background-color: #D9CFC4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .hero-placeholder-icon {
-      width: 48px;
-      height: 48px;
-      opacity: 0.4;
-    }
-
-    .hero-placeholder-text {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      color: #1E3C2E;
-      opacity: 0.5;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    /* ── CONTENT ── */
+  <style>.cta-button:hover {background-color:#C4882A !important}
+@media only screen and (max-width: 600px) {
     .content {
-      padding: 48px 56px 24px;
-    }
-
-    .tag-line {
-      font-size: 10px;
-      font-weight: 600;
-      color: #C4882A;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
+        padding: 36px 28px 32px !important
+        }
     .content h1 {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 36px;
-      font-weight: 400;
-      color: #1E3C2E;
-      line-height: 1.2;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .greeting {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1E3C2E;
-      margin-bottom: 16px;
-    }
-
-    .body-text {
-      font-size: 14px;
-      font-weight: 400;
-      color: #3D3D3D;
-      line-height: 1.8;
-      margin-bottom: 16px;
-    }
-
-    .body-text strong {
-      color: #1E3C2E;
-      font-weight: 600;
-    }
-
-    /* ── DIVIDER ── */
-    .divider {
-      width: 48px;
-      height: 2px;
-      background-color: #C4882A;
-      margin: 32px 0;
-    }
-
-    /* ── CTA BUTTON ── */
-    .cta-wrapper {
-      margin: 32px 0 8px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #1E3C2E;
-      color: #FFFFFF !important;
-      text-decoration: none;
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 16px 40px;
-      border-radius: 2px;
-    }
-
-    .cta-button:hover {
-      background-color: #C4882A;
-    }
-
-    /* ── SIGNATURE ── */
-    .signature {
-      margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid #E8E2DA;
-    }
-
-    .signature-name {
-      font-size: 13px;
-      font-weight: 600;
-      color: #1E3C2E;
-      margin-bottom: 2px;
-    }
-
-    .signature-role {
-      font-size: 11px;
-      color: #888;
-      letter-spacing: 1px;
-    }
-
-    /* ── FEATURES BAR ── */
+        font-size: 22px !important
+        }
     .features-bar {
-      background-color: #F5F0EB;
-      padding: 32px 40px;
-    }
-
-    .features-row {
-      display: table;
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 24px;
-    }
-
-    .features-row:last-child {
-      margin-bottom: 0;
-    }
-
+        padding: 24px 20px !important
+        }
     .feature-cell {
-      display: table-cell;
-      width: 50%;
-      text-align: center;
-      padding: 0 16px;
-      vertical-align: top;
-    }
-
-    .feature-icon {
-      width: 28px;
-      height: 28px;
-      margin: 0 auto 10px;
-      display: block;
-    }
-
-    .feature-label {
-      font-size: 10px;
-      font-weight: 600;
-      color: #1E3C2E;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      line-height: 1.4;
-    }
-
-    /* ── FOOTER ── */
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px !important
+        }
     .footer {
-      background-color: #1E3C2E;
-      padding: 32px 40px;
-      text-align: center;
-    }
-
-    .footer-logo {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: #C4882A;
-      letter-spacing: 2px;
-      text-transform: lowercase;
-      margin-bottom: 4px;
-    }
-
-    .footer-logo-sub {
-      font-size: 10px;
-      color: #FFFFFF;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      opacity: 0.7;
-      margin-bottom: 20px;
-    }
-
-    .footer-social {
-      margin-bottom: 20px;
-    }
-
-    .footer-social a {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      color: #C4882A !important;
-      text-decoration: none;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      border: 1px solid #C4882A;
-      padding: 6px 16px;
-      border-radius: 2px;
-      margin: 0 4px;
-    }
-
-    .footer-address {
-      font-size: 10px;
-      color: #FFFFFF;
-      opacity: 0.6;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
-    .footer-unsubscribe {
-      font-size: 10px;
-      color: #FFFFFF;
-      opacity: 0.45;
-      line-height: 1.6;
-    }
-
-    .footer-unsubscribe a {
-      color: #FFFFFF !important;
-      opacity: 0.7;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media only screen and (max-width: 600px) {
-      .content { padding: 36px 28px 32px; }
-      .content h1 { font-size: 22px; }
-      .features-bar { padding: 24px 20px; }
-      .feature-cell { display: block; width: 100%; margin-bottom: 20px; }
-      .footer { padding: 28px 24px; }
-      .header { padding: 24px 24px; }
-    }
-  </style>
+        padding: 28px 24px !important
+        }
+    .header {
+        padding: 24px 24px !important
+        }
+    }</style>
 </head>
-<body>
+<body style='background-color:#F5F0EB; font-family:"Montserrat", Arial, sans-serif; font-size:14px; color:#1E3C2E; -webkit-font-smoothing:antialiased' bgcolor="#F5F0EB">
   <!-- Preview text (hidden) -->
   <div style="display:none;font-size:1px;color:#F5F0EB;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
     Que tal revisitar aquele descanso que fez tão bem?
   </div>
 
-  <div class="email-wrapper">
-    <table class="email-container" cellpadding="0" cellspacing="0" border="0" align="center">
+  <div class="email-wrapper" style="background-color:#F5F0EB; padding:32px 0" bgcolor="#F5F0EB">
+    <table class="email-container" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:700px; margin:0 auto; background-color:#FFF" width="100%" bgcolor="#FFFFFF">
 
       <!-- HEADER / LOGO -->
       <tr>
-        <td class="header">
-          <img src="https://raw.githubusercontent.com/giuiia/Jardim-imagens/main/Logos%20jardim-02.png" alt="Pousada Jardim Monte Verde" width="110" style="display:block;margin:0 auto;" />
+        <td class="header" style="background-color:#1E3C2E; padding:28px 40px; text-align:center" bgcolor="#1E3C2E" align="center">
+          <img src="https://raw.githubusercontent.com/giuiia/Jardim-imagens/main/Logos%20jardim-02.png" alt="Pousada Jardim Monte Verde" width="110" style="display:block;margin:0 auto;">
         </td>
       </tr>
 
@@ -349,29 +58,29 @@
       <tr>
         <td>
           <!-- SUBSTITUIR: inserir foto atrativa da fachada, jardim ou área externa da pousada -->
-          <img src="https://raw.githubusercontent.com/giuiia/Jardim-imagens/main/e-mail1.jpg" alt="Pousada Jardim Monte Verde" width="700" style="display:block;width:100%;max-width:700px;" />
+          <img src="https://raw.githubusercontent.com/giuiia/Jardim-imagens/main/e-mail1.jpg" alt="Pousada Jardim Monte Verde" width="700" style="display:block;width:100%;max-width:700px;">
         </td>
       </tr>
 
       <!-- MAIN CONTENT -->
       <tr>
-        <td class="content">
-          <h1>Faz tempo que a gente<br>não se vê.</h1>
+        <td class="content" style="padding:48px 56px 24px">
+          <h1 style='font-family:Georgia, "Times New Roman", serif; font-size:36px; font-weight:400; color:#1E3C2E; line-height:1.2; margin-bottom:24px; text-transform:uppercase; letter-spacing:1px'>Faz tempo que a gente<br>não se vê.</h1>
 
-          <p class="body-text">
+          <p class="body-text" style="font-size:14px; font-weight:400; color:#3D3D3D; line-height:1.8; margin-bottom:16px">
             A gente lembra de você — e de como Monte Verde tem aquele jeito especial de fazer a gente
-            <strong>respirar fundo</strong>.
+            <strong style="color:#1E3C2E; font-weight:600">respirar fundo</strong>.
           </p>
 
-          <p class="body-text">
+          <p class="body-text" style="font-size:14px; font-weight:400; color:#3D3D3D; line-height:1.8; margin-bottom:16px">
             Faz um tempo que você não passa por aqui. Desde a última vez, o café da manhã ficou ainda mais gostoso
             e a nossa equipe segue guardando o mesmo acolhimento de sempre.
           </p>
 
           <p style="font-family:Georgia,'Times New Roman',serif;font-size:20px;font-weight:400;color:#1E3C2E;text-transform:uppercase;letter-spacing:1px;line-height:1.3;margin-bottom:16px;">Monte Verde está te esperando.</p>
 
-          <div class="cta-wrapper">
-            <a href="https://hbook.hsystem.com.br/Booking?companyId=62da06aa6959216cb6cf92dc" class="cta-button">Ver disponibilidade</a>
+          <div class="cta-wrapper" style="margin:32px 0 8px">
+            <a href="https://hbook.hsystem.com.br/Booking?companyId=62da06aa6959216cb6cf92dc" class="cta-button" style='display:inline-block; background-color:#1E3C2E; text-decoration:none; font-family:"Montserrat", Arial, sans-serif; font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; padding:16px 40px; border-radius:2px; color:#FFF !important' bgcolor="#1E3C2E">Ver disponibilidade</a>
           </div>
         </td>
       </tr>
@@ -379,25 +88,25 @@
       <!-- SIGNATURE -->
       <tr>
         <td style="padding: 0 56px 20px;">
-          <div class="signature">
-            <p class="signature-role">Monte Verde, MG &nbsp;&middot;&nbsp; @pousadajardimmv</p>
+          <div class="signature" style="margin-top:40px; padding-top:24px; border-top:1px solid #E8E2DA">
+            <p class="signature-role" style="font-size:11px; color:#888; letter-spacing:1px">Monte Verde, MG  ·  @pousadajardimmv</p>
           </div>
         </td>
       </tr>
 
       <!-- FOOTER -->
       <tr>
-        <td class="footer">
-          <img src="https://raw.githubusercontent.com/giuiia/Jardim-imagens/main/Logos%20jardim-02.png" alt="Pousada Jardim Monte Verde" width="80" style="display:block;margin:0 auto 16px;" />
+        <td class="footer" style="background-color:#1E3C2E; padding:32px 40px; text-align:center" bgcolor="#1E3C2E" align="center">
+          <img src="https://raw.githubusercontent.com/giuiia/Jardim-imagens/main/Logos%20jardim-02.png" alt="Pousada Jardim Monte Verde" width="80" style="display:block;margin:0 auto 16px;">
 
-          <p class="footer-address">
-            Pousada Jardim Monte Verde &nbsp;&middot;&nbsp; Monte Verde, MG<br>
+          <p class="footer-address" style="font-size:10px; color:#FFF; opacity:0.6; line-height:1.6; margin-bottom:16px">
+            Pousada Jardim Monte Verde  ·  Monte Verde, MG<br>
             [Endereço completo da pousada]
           </p>
 
-          <p class="footer-unsubscribe">
+          <p class="footer-unsubscribe" style="font-size:10px; color:#FFF; opacity:0.45; line-height:1.6">
             Você está recebendo este e-mail porque se cadastrou em nossa lista.<br>
-            <a href="[LINK DESCADASTRO]">Cancelar inscrição</a>
+            <a href="[LINK%20DESCADASTRO]" style="opacity:0.7; color:#FFF !important">Cancelar inscrição</a>
           </p>
         </td>
       </tr>
